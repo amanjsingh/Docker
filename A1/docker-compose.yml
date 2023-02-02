@@ -1,7 +1,7 @@
 version: "3"
 services:
   validator:
-    build: ./Container1
+    image: amanjsingh/validator
     container_name: validator
     depends_on:
       - calculator
@@ -11,7 +11,7 @@ services:
       - .:/usr/src/app/data
 
   calculator:
-    build: ./Container2
+    image: amanjsingh/calculator
     container_name: calculator
     volumes:
       - .:/usr/src/app/data
