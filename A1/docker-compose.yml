@@ -1,0 +1,17 @@
+version: "3"
+services:
+  validator:
+    build: ./Container1
+    container_name: validator
+    depends_on:
+      - calculator
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/src/app/data
+
+  calculator:
+    build: ./Container2
+    container_name: calculator
+    volumes:
+      - .:/usr/src/app/data
