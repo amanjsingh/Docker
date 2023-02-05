@@ -17,6 +17,9 @@
 # [6]		“os.path — Common Pathname Manipulations.”  _Python Documentation_, 
 #         docs.python.org/3/library/os.path.html.
 
+# [7]     “How to Process Incoming Request Data in Flask | DigitalOcean.” How to Process Incoming Request Data in Flask | DigitalOcean, 
+#         www.digitalocean.com/community/tutorials/processing-incoming-request-data-in-flask.
+
 
 
 from flask import Flask, request
